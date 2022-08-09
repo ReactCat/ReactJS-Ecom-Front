@@ -13,14 +13,14 @@ const Container = styled.div`
     
 `
 
-const Announce = () => {
+const Promotion = () => {
   return (
     <Container>
-        Super Deal. Free Shipping on order over $50.00
+        Special Autumn Sale. 20% off all hoodies. 
     </Container>
   )
 }
 
-export default Announce;
+export default Promotion;
 
 

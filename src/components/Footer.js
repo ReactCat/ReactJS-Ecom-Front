@@ -1,4 +1,8 @@
-import { Facebook, Instagram, Pinterest, Twitter, MailOutline, Phone, Room  } from '@mui/icons-material'
+import { 
+    Facebook, Instagram, Pinterest, 
+    MailOutline, Phone, Room,  
+} from '@mui/icons-material'
+import MenuIcon from '@mui/icons-material/Menu';
 import React from 'react'
 import styled from 'styled-components'
 import {mobile} from "../responsive";
@@ -14,7 +18,7 @@ const Left = styled.div`
     flex-direction: column;
     padding: 20px;
 `
-const Logo = styled.h1`
+const Logo = styled.h2`
     
 `
 const Desc = styled.p`
@@ -87,7 +91,7 @@ const Footer = () => {
     <Container>
         <Left>
             <Logo>T-Shirt Shop</Logo>
-            <Desc>Lorem ipsum dolor sit amet. Ut quam voluptatem</Desc>
+            <Desc>You can follow us here...</Desc>
             <SocialContainer>
                 <SocialIcon color='3B4999'>
                     <Facebook />
@@ -95,24 +99,23 @@ const Footer = () => {
                 <SocialIcon color='E4405F'>
                     <Instagram />
                 </SocialIcon>
-                <SocialIcon color='55AECC'>
-                    <Twitter />
-                </SocialIcon>
+                
+
                 <SocialIcon color='3B4999'>
                     <Pinterest />
                 </SocialIcon>
             </SocialContainer>
         </Left>
         <Center>
-            <Title>Usefull Links </Title>
+            <Title>Shopping Links </Title>
             <List>
                 <ListItem>Home</ListItem>
                 <ListItem>Cart</ListItem>
-                <ListItem>Men's Fashion</ListItem>
-                <ListItem>Women's Fashion</ListItem>
+                <ListItem>Women's Clothing</ListItem>
                 <ListItem>My Account</ListItem>
+                <ListItem>Men's Clothing</ListItem>
                 <ListItem>Order Tracking</ListItem>
-                <ListItem>Wish List</ListItem>
+                <ListItem>Children's Clothing</ListItem>
                 <ListItem>Terms</ListItem>
             </List>
 

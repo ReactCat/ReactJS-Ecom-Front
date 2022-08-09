@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
-import Announce from '../components/Announce'
-import Newsletter from '../components/Newsletter'
 import Products from '../components/Products'
 import Footer from '../components/Footer'
 import {mobile} from "../responsive";
+import Catalogue from '../components/Catalogue'
+import Promotion from '../components/Promotion'
 
 const Container = styled.div`
 
@@ -46,7 +46,7 @@ const ProductList = () => {
   return (
     <Container>
 
-       <Announce />
+       <Promotion />
        <Navbar />
        <Title> T-Shirts</Title>
         
@@ -86,7 +86,7 @@ const ProductList = () => {
             </Filter>
         </FilterContainer>
         <Products />
-        <Newsletter />
+        <Catalogue />
         <Footer />
         
         </Container>

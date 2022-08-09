@@ -1,22 +1,23 @@
 
 import React from 'react'
-import Announce from '../components/Announce';
+import Announce from '../components/Promotion';
 import Category from '../components/Category';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-import Newsletter from '../components/Newsletter';
 import Products from '../components/Products';
+import Catalogue from '../components/Catalogue';
+import Promotion from '../components/Promotion';
 
 
 
 const Home = () => {
   return (
     <div>
-      <Announce />
+      <Promotion />
       <Navbar />
       <Category />
       <Products />
-      <Newsletter />
+      <Catalogue />
       <Footer />
 
             

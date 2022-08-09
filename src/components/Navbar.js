@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import SearchIcon from '@mui/icons-material/Search';
-import Search from '@mui/icons-material/Search';
-import { Badge } from '@mui/material';
+import IconButton from '@mui/material/IconButton';
+import { Badge} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 import ShoppingCartOutlined from '@mui/icons-material/ShoppingCart';
 import {mobile} from "../responsive";
+import { MiscellaneousServicesOutlined } from '@mui/icons-material';
 
 
 const Container = styled.div`
@@ -33,13 +34,6 @@ const Language = styled.span`
     cursor: pointer;
     ${mobile({ display: "none" })}
     
-`
-const SearchContainer = styled.div`
-    border: 0.5px solid lightgrey;
-    display: flex;
-    align-items: center;
-    margin: 25px;
-    padding: 5px;
 `
 
 const Input = styled.input`
@@ -81,11 +75,10 @@ const Navbar = () => {
       <Container>
         <Wrapper>
           <Left>
-            <Language>EN</Language>
-            <SearchContainer>
-              <Input placeholder="Search" />
-              <Search style={{ color: "gray", fontSize: 12 }} />
-            </SearchContainer>
+          <Language>EN</Language>
+          <IconButton>
+                    <MenuIcon />
+            </IconButton>
           </Left>
           <Center>
             <Logo>T-Shirt Store</Logo>

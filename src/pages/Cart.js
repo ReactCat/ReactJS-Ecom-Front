@@ -1,11 +1,11 @@
 import { Add, Remove } from '@mui/icons-material';
 import React from 'react'
 import styled from 'styled-components';
-import Announce from '../components/Announce';
+import Catalogue from '../components/Catalogue';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-import Newsletter from '../components/Newsletter';
 import {mobile} from "../responsive";
+import Promotion from '../components/Promotion';
 
 const Container = styled.div`
    
@@ -173,7 +173,7 @@ font-weight: 600;
 const Cart = () => {
   return (
     <Container>
-    <Announce />
+    <Promotion />
       <Navbar />
       
       <Wrapper>
@@ -253,7 +253,7 @@ const Cart = () => {
             </Summary>
         </Bottom>
       </Wrapper>
-      <Newsletter />
+      <Catalogue />
       <Footer />
     </Container>
   )

@@ -15,12 +15,12 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-    font-size: 70px;
+    font-size: 40px;
     margin-bottom: 20px;
    
 `
 const Desc = styled.div`
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 300;
     margin-bottom: 20px;
     ${mobile({ textAlign: "center", })}
@@ -28,7 +28,7 @@ const Desc = styled.div`
    
 `
 const InputContainer = styled.div`
-    width: 50%;
+    width: 45%;
     height: 40px;
     background-color: white;
     display: flex;
@@ -55,11 +55,11 @@ const Button = styled.button`
    
 `
 
-const Newsletter = () => {
+const Catalogue = () => {
   return (
     <Container>
-       <Title>Newsletter</Title>
-       <Desc>Lorem ipsum dolor sit amet. Ut quam voluptatem </Desc>
+       <Title>Send Catalogue</Title>
+       <Desc>Please input your email if you would like us to send you a free shopping catalogue.  </Desc>
        <InputContainer>
         <Input placeholder='Your email'/>
         <Button><Send /></Button>
@@ -71,5 +71,5 @@ const Newsletter = () => {
   )
 }
 
-export default Newsletter;
+export default Catalogue;
 
